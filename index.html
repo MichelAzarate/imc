@@ -9,36 +9,37 @@
 </head>
 <body>
     <h1>MICHEL FERNANDO AZARATE</h1>
-    <div class="conteiner">
-        <div class="first-step">
-            <p>Clique no botão para calcular o seu IMC</p>
-            <button onclick="go(1,2)">Iniciar</button>
+        <div class="conteiner">
+            <div class="first-step">
+                <p>Clique no botão para calcular o seu IMC</p>
+                <button onclick="go(1,2)">Iniciar</button>
+            </div>
+            <div class="secone-step">
+                <h3>Calculadora de IMC</h3>
+                <hr>
+                    <form action="">
+        
+                        <label for="peso">Digite o seu peso</label>
+                        <input type="number" placeholder="seu peso" id="peso">
+                        <br><br>
+                        <label for="altura">Digite o seu altura</label>
+                        <input type="number" placeholder="sua altua" id="altura">
+                        <br><br>
+                        <input type="reset" id="linpar" value="Linpar">
+                
+                    </form>
+                    <button onclick="validate()">Calcular</button>
+            
+            </div>
+            <div class="final-step">
+                <h3>Resultado</h3>
+                <p id="resultado">...</p>
+                <button onclick="go(3,2)" onclick="clear()" >Calcular Novamente</button>
+                <button onclick="go(3,1)">Finalizar</button>
+            </div>
         </div>
-        <div class="secone-step">
-            <h3>Calculadora de IMC</h3>
-            <hr>
-            <label for="peso">Digite o seu peso</label>
-            <input type="number" placeholder="seu peso" id="peso">
-            <br><br>
-            <label for="altura">Digite o seu altura</label>
-            <input type="number" placeholder="sua altua" id="altura">
-            <br><br>
-            <button onclick="validate()">Calcular</button>
-        </div>
-        <div class="final-step">
-            <h3>Resultado</h3>
-            <p id="resultado">...</p>
-            <button onclick="go(3,2)" onclick="clear()" >Calcular Novamente</button>
-            <button onclick="go(3,1)">Finalizar</button>
-        </div>
-    </div>
 </body>
 <script src="javascript/script.js"></script>
 <script>
-    function clear()
-    {
-        document.getElementById('peso').innerText = '';
-        document.getElementById('altura').innerText = '';
-    }
 </script>
 </html>

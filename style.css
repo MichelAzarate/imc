@@ -39,6 +39,21 @@ input{
     border: none;
     outline: none;
 }
+#linpar{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    background-color: slateblue;
+    color: whitesmoke;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .4);
+}
+#linpar:hover{
+    background-color: blue;
+    cursor: pointer;
+}
 #resultado{
     font-size: 2em;
 }
